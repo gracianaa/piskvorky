@@ -36,7 +36,7 @@ body {
 
 .intro {
   max-width: 80vmin;
-  width: 300px;
+  min-width: 300px;
 }
 
 .intro__picture {
@@ -119,4 +119,25 @@ img.start-play {
 .game__player,
 .game__buttons {
   gap: 5px;
+}
+
+.game__board {
+  display: flex;
+  flex-wrap: wrap;
+  height: 300px;
+  min-height: 80vmin;
+  border: 1.5px solid #2e2c56;
+}
+
+.game__board-btn {
+  width: calc(100% / 10);
+  height: calc(100% / 10);
+
+  background-color: #ffc8da;
+  border: 1.5px solid #2e2c56;
+}
+
+.game__board-btn:focus,
+.game__board-btn:hover {
+  opacity: 0.6;
 }
