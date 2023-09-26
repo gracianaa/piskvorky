@@ -133,11 +133,11 @@ img.start-play {
   width: calc(100% / 10);
   height: calc(100% / 10);
 
-  background-color: #ffc8da;
+  background-color: #ffc7f3;
   border: 1.5px solid #2e2c56;
 }
 
 .game__board-btn:focus,
 .game__board-btn:hover {
-  opacity: 0.6;
+  opacity: 0.5;
 }
