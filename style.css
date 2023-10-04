@@ -132,7 +132,7 @@ img.start-play {
   flex-wrap: wrap;
   height: 300px;
   min-height: 80vmin;
-  border: 1.5px solid #2e2c56;
+  border: 1px solid #2e2c56;
   background-image: linear-gradient(#615dad, #ffc8da);
   ;
 }
@@ -142,10 +142,27 @@ img.start-play {
   height: calc(100% / 10);
 
   background-color: transparent;
-  border: 1.5px solid #2e2c56;
+  border: 1px solid #2e2c56;
 }
 
 .game__board-btn:focus,
 .game__board-btn:hover {
   background-color: #c2b3eab7
+}
+
+
+/* ukol-piskvorky-3 */
+
+.board__field--circle {
+  background-image: url(img/circle-black.svg);
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.board__field--cross {
+  background-image: url(img/cross-black.svg);
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
