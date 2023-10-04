@@ -25,3 +25,10 @@ btn.forEach((button) => {
   button.addEventListener('click', selectBtn);
   button.addEventListener('click', changePlayer);
 });
+
+document.querySelector('.start-play').addEventListener('click', (event) => {
+  const answer = confirm('Opravdu chceš začít znovu?');
+  if (answer === false) {
+    event.preventDefault();
+  }
+});
