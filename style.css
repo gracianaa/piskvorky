@@ -158,6 +158,7 @@ img.start-play {
   background-size: 70%;
   background-repeat: no-repeat;
   background-position: center;
+
 }
 
 .board__field--cross {
@@ -165,4 +166,21 @@ img.start-play {
   background-size: 70%;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+/* bonus */
+
+@keyframes zoomOut {
+  from {
+    transform: scale(0.5);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+.board__field--circle,
+.board__field--cross {
+  animation: zoomOut 0.15s;
 }

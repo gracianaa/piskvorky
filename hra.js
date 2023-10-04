@@ -26,6 +26,8 @@ btn.forEach((button) => {
   button.addEventListener('click', changePlayer);
 });
 
+//bonus ukol
+
 document.querySelector('.start-play').addEventListener('click', (event) => {
   const answer = confirm('Opravdu chceš začít znovu?');
   if (answer === false) {
