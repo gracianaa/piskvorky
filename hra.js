@@ -44,6 +44,7 @@ const selectBtn = (event) => {
   const vitez = findWinner(herniPole);
   if (vitez === 'o' || vitez === 'x') {
     alert(`Vyhrál hráč se symbolem ${vitez}.`); // Vyhrál hráč se symbolem o.
+    location.reload();
   } else if (vitez === 'tie') {
     alert(`Remíza`);
   }
