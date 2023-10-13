@@ -43,8 +43,10 @@ const selectBtn = (event) => {
 
   const vitez = findWinner(herniPole);
   if (vitez === 'o' || vitez === 'x') {
-    alert(`Vyhrál hráč se symbolem ${vitez}.`); // Vyhrál hráč se symbolem o.
-    location.reload();
+    setTimeout(() => {
+      alert(`Vyhrál hráč se symbolem ${vitez}.`); // Vyhrál hráč se symbolem o.
+      location.reload();
+    }, 200);
   } else if (vitez === 'tie') {
     alert(`Remíza`);
   }
